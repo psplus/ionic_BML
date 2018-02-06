@@ -1,0 +1,28 @@
+<ion-content padding id="login">
+<div text-center padding>
+    <h1></h1>
+    <h1 ion-text color="light" >
+      <i class="ion-social-angular"></i>
+      <ion-icon name="logo-angular"></ion-icon>
+    </h1>
+    <h1 ion-text color="light" >SBJ SOFT</h1>
+    <h3 ion-text color="light" >LABVIEW</h3>
+  </div>
+    
+<ion-list id="us_input">
+    <ion-item>
+      <ion-icon item-left name="ios-mail-outline"></ion-icon>
+      <ion-input type="text" placeholder="Username" [(ngModel)]="userdata.user"></ion-input>
+    </ion-item>
+     <h3></h3>
+    <ion-item>
+      <ion-icon item-left name="ios-lock-outline"></ion-icon>
+      <ion-input type="password" placeholder="Password" [(ngModel)]="userdata.pass"></ion-input>
+    </ion-item>
+</ion-list>
+    <div id="submit">
+     <button ion-button full (click)="onLoadNewPlace()">LOGIN</button>
+  </div>
+    
+    
+</ion-content>

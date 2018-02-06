@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    </ion-buttons>
+    <ion-title>{{host_name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+    <h1 padding>ยินดีต้อนรับ {{host_name}}</h1>
+    <ion-list>
+        <button ion-item menuClose *ngFor="let p of alldata" (click)="openPage(p._ser)">
+          {{ p._name }}
+        </button>
+    </ion-list>
+</ion-content>
